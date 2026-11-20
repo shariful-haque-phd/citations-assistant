@@ -1,0 +1,32 @@
+{
+  "project_id": 25,
+  "repo_name": "025-technical-manual-assistant",
+  "title": "Technical Manual Assistant",
+  "theme": "Document Intelligence & RAG",
+  "theme_id": "T03",
+  "level": 2,
+  "level_label": "Applied Intelligence",
+  "prototype_status": "research prototype",
+  "primary_description": "Manual search with page/source citations",
+  "research_question_proposed": "Can documentation retrieval supply source-traceable answers for technical troubleshooting questions?",
+  "sample_files": [
+    "sample_manuals/router_manual.md"
+  ],
+  "source_modules": [
+    "src/manual_assistant.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/manual_assistant.py index sample_manuals --index-dir outputs/index",
+    "python src/manual_assistant.py ask outputs/index \"What should I check when the status LED flashes?\""
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level2-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "025",
+  "status": "executed",
+  "commands": [
+    "python src/manual_assistant.py index sample_manuals --index-dir outputs/index",
+    "python src/manual_assistant.py ask outputs/index \"What should I check when the status LED flashes?\""
+  ],
+  "elapsed_seconds": 6.72,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample_manuals/router_manual.md",
+      "sha256": "f3f2e1c01a04b80211ec144382888f8a55adee25e31559c2a3cb12fc52fdf9cf"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "8e74b71a4b877a513795883d804466b47fab3d4f6ef06ad4f54563e0f7ca917f",
+      "bytes": 646
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}
